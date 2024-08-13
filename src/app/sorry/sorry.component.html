@@ -1,9 +1,20 @@
 <div class="sorry-container">
   <h1>I'm Sorry 😢</h1>
-  <p>Hi Subhalaxmi, Your boy made a big mistake. But He loves you so much. I am not lying. In these yeras I never ever faked my love to you.
-    Always gave my best what I can. A wrong thing I did. I accept it. I made the mistake, that curocity overtook. But my intention was never wrong.
-    Please forgive me. You will never regret it I promise. I nver faked it baba. Please Please forgive me. </p>
+  <p>Hi Subhalaxmi, Your boy made a big mistake. But he loves you so much. I am not lying. In these years, I never ever faked my love for you.
+    Always gave my best in what I can. I made a mistake, and curiosity overtook me, but my intention was never wrong.
+    Please forgive me. You will never regret it, I promise. I never faked it, baba. Please, please forgive me.</p>
   <img src="../../assets/Sorry.png" alt="Sorry Graphic">
+
+  <div class="button-container">
+    <button class="btn forgive-btn" (click)="showMessage('forgive')">Forgive Me</button>
+    <button class="btn maybe-btn" (click)="showMessage('maybe')">Maybe Later</button>
+    <button class="btn reject-btn" (click)="showMessage('reject')">Not This Time</button>
+  </div>
+
+  <div *ngIf="message" class="message-display">
+    <p>{{ message }}</p>
+  </div>
 </div>
+
 
 
