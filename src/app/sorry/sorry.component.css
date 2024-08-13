@@ -18,3 +18,64 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+.message-display {
+  margin-top: 30px;
+  font-size: 1.5em;
+  color: #555;
+}
+
+.message-display p {
+  padding: 15px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.button-container {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.btn {
+  padding: 15px 30px;
+  font-size: 1.2em;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: white;
+  text-transform: uppercase;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.forgive-btn {
+  background: linear-gradient(135deg, #4CAF50 0%, #66BB6A 100%);
+}
+
+.maybe-btn {
+  background: linear-gradient(135deg, #ff9800 0%, #ffb74d 100%);
+}
+
+.reject-btn {
+  background: linear-gradient(135deg, #f44336 0%, #ef5350 100%);
+}
+
+.forgive-btn:hover {
+  background: linear-gradient(135deg, #66BB6A 0%, #4CAF50 100%);
+}
+
+.maybe-btn:hover {
+  background: linear-gradient(135deg, #ffb74d 0%, #ff9800 100%);
+}
+
+.reject-btn:hover {
+  background: linear-gradient(135deg, #ef5350 0%, #f44336 100%);
+}
